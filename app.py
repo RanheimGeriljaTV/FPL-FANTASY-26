@@ -592,6 +592,211 @@ custom_css = """
     div[class*="st-key-btn_trigger_tab"] {
         display: none !important;
     }
+
+    /* =========================================================
+       RESPONSIVE & MOBILE DESIGN (SMARTPHONES & TABLETS)
+       ========================================================= */
+    @media (max-width: 900px) {
+        .block-container {
+            padding-top: 0.6rem !important;
+            padding-bottom: 2rem !important;
+            padding-left: 0.4rem !important;
+            padding-right: 0.4rem !important;
+            max-width: 100% !important;
+        }
+        .fpl-header {
+            padding: 12px 14px !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 8px !important;
+            border-radius: 12px !important;
+            margin-bottom: 12px !important;
+        }
+        .fpl-title {
+            font-size: 19px !important;
+        }
+        .fpl-subtitle {
+            font-size: 11px !important;
+        }
+        /* Make metric cards 2x2 grid on mobile */
+        [data-testid="column"] {
+            min-width: 47% !important;
+            flex: 1 1 47% !important;
+            margin-bottom: 6px !important;
+        }
+        .metric-card {
+            padding: 10px 8px !important;
+            border-radius: 10px !important;
+        }
+        .metric-label {
+            font-size: 9.5px !important;
+        }
+        .metric-value {
+            font-size: 20px !important;
+        }
+        .metric-sub {
+            font-size: 9px !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        /* Mobile Football Pitch */
+        .pitch-container {
+            min-height: auto !important;
+            padding: 14px 4px 16px 4px !important;
+            border-radius: 14px !important;
+            border-width: 2.5px !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            scroll-behavior: smooth;
+        }
+        .pitch-center-circle {
+            width: 100px !important;
+            height: 100px !important;
+        }
+        .pitch-row {
+            margin-bottom: 12px !important;
+            display: flex !important;
+            justify-content: center !important;
+            gap: 4px !important;
+            min-width: max-content !important;
+            padding: 0 4px !important;
+        }
+        .bench-container {
+            padding: 12px 6px !important;
+            border-radius: 14px !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            margin-bottom: 16px !important;
+        }
+        .bench-container .pitch-row {
+            min-width: max-content !important;
+            margin-bottom: 0 !important;
+        }
+        .bench-title {
+            font-size: 11px !important;
+            margin-bottom: 8px !important;
+        }
+
+        /* Scaled Down Mobile FUT Card */
+        .fut-card {
+            width: 116px !important;
+            min-width: 116px !important;
+            border-radius: 10px !important;
+            border-width: 1.5px !important;
+            margin: 0 1px !important;
+        }
+        .fut-card:hover {
+            transform: none !important;
+        }
+        .plastic-sleeve-notch {
+            width: 28px !important;
+            height: 3px !important;
+        }
+        .fut-card-top-bar {
+            padding: 2px 4px !important;
+            border-top-left-radius: 8px !important;
+            border-top-right-radius: 8px !important;
+        }
+        .fut-club-badge {
+            width: 15px !important;
+            height: 15px !important;
+        }
+        .fut-top-team-name {
+            font-size: 8px !important;
+            padding: 0 2px !important;
+        }
+        .fut-pos-badge {
+            font-size: 7.5px !important;
+            padding: 1px 3px !important;
+            border-radius: 3px !important;
+        }
+        .card-badge-cap-gold, .card-badge-cap-silver {
+            top: 24px !important;
+            right: 4px !important;
+            font-size: 7.5px !important;
+            padding: 1px 3px !important;
+        }
+        .fut-photo-wrap {
+            height: 86px !important;
+            width: calc(100% - 6px) !important;
+            margin: 2px auto 0 auto !important;
+            border-radius: 6px !important;
+        }
+        .spotlight-halo {
+            width: 65px !important;
+            height: 65px !important;
+        }
+        .fut-player-img {
+            transform: scale(1.32) !important;
+            transform-origin: center 20% !important;
+        }
+        .fut-name {
+            font-size: 10.5px !important;
+            padding: 1px 3px !important;
+            margin: 2px 3px 0 3px !important;
+            letter-spacing: 0.2px !important;
+        }
+        .fut-team-cost {
+            font-size: 8.5px !important;
+            margin: 1px 0 2px 0 !important;
+        }
+        .pill-live, .pill-ft, .pill-unplayed {
+            font-size: 7.5px !important;
+            padding: 1px 4px !important;
+            margin: 1px auto !important;
+        }
+        .fut-hero-box {
+            padding: 2px 2px 3px 2px !important;
+        }
+        .fut-hero-val {
+            font-size: 15px !important;
+        }
+        .fut-hero-label {
+            font-size: 6.5px !important;
+            letter-spacing: 0.3px !important;
+        }
+
+        /* Streamlit Tabs on mobile */
+        div[data-testid="stTabs"] [data-baseweb="tab-list"] {
+            gap: 2px !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            scrollbar-width: none !important;
+        }
+        div[data-testid="stTabs"] [data-baseweb="tab-list"]::-webkit-scrollbar {
+            display: none !important;
+        }
+        div[data-testid="stTabs"] button[data-baseweb="tab"] {
+            padding: 5px 8px !important;
+            font-size: 11px !important;
+            white-space: nowrap !important;
+        }
+
+        /* Dialog Modal on mobile */
+        div[data-testid="stDialog"] div[role="dialog"] {
+            width: 96vw !important;
+            max-width: 96vw !important;
+            padding: 10px 8px !important;
+        }
+    }
+
+    /* Small phone screens (under 420px) */
+    @media (max-width: 420px) {
+        .fut-card {
+            width: 102px !important;
+            min-width: 102px !important;
+        }
+        .fut-photo-wrap {
+            height: 76px !important;
+        }
+        .fut-name {
+            font-size: 9.5px !important;
+        }
+        .fut-hero-val {
+            font-size: 13.5px !important;
+        }
+    }
 </style>
 """
 st.html(custom_css)
