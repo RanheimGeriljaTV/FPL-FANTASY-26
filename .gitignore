@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache directories
+.cache/
+.pytest_cache/
+FPL-Optimization-Tools/.cache/
+
+# Environments
+.venv/
+env/
+venv/
+.env
+
+# Streamlit config (keep defaults, ignore creds)
+.streamlit/secrets.toml

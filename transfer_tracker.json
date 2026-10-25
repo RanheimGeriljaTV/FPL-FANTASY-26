@@ -1,0 +1,54 @@
+[
+  {
+    "id": "tx_1789371275_175_229",
+    "gw": 5,
+    "date": "14.09.2026",
+    "out_id": 175,
+    "out_name": "van Ewijk",
+    "out_team": "COV",
+    "in_id": 229,
+    "in_name": "Tarkowski",
+    "in_team": "EVE",
+    "exp_gain": 6.9,
+    "hit_cost": 0
+  },
+  {
+    "id": "tx_1791353022_368_124",
+    "gw": 6,
+    "date": "07.10.2026",
+    "out_id": 368,
+    "out_name": "Szoboszlai",
+    "out_team": "LIV",
+    "in_id": 124,
+    "in_name": "Groß",
+    "in_team": "BHA",
+    "exp_gain": 9.9,
+    "hit_cost": 0
+  },
+  {
+    "id": "tx_1791884230_532_115",
+    "gw": 7,
+    "date": "13.10.2026",
+    "out_id": 532,
+    "out_name": "Ballard",
+    "out_team": "SUN",
+    "in_id": 115,
+    "in_name": "De Cuyper",
+    "in_team": "BHA",
+    "exp_gain": 12.1,
+    "hit_cost": 0
+  },
+  {
+    "id": "tx_1792596553_464_346",
+    "gw": 8,
+    "date": "21.10.2026",
+    "out_id": 464,
+    "out_name": "Wissa",
+    "out_team": "NEW",
+    "in_id": 346,
+    "in_name": "Calvert-Lewin",
+    "in_team": "LEE",
+    "exp_gain": 3.1,
+    "hit_cost": 0
+  }
+]
