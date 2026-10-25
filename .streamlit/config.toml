@@ -3,5 +3,8 @@ headless = true
 enableCORS = false
 enableXsrfProtection = false
 
+[client]
+showErrorDetails = true
+
 [browser]
 gatherUsageStats = false
